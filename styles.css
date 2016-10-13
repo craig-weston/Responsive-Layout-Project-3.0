@@ -100,8 +100,6 @@ header .profile-image {
     background: #fff;
     padding: 10px;
     height: 100%;
-    background-size: cover;
-    overflow: overlay;
 }
 
 h2 {
