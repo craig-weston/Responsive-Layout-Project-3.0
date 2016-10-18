@@ -1,0 +1,230 @@
+/* Global Layout Set-up */
+
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Istok Web', sans-serif;
+  color: #4a4a4a;
+  background: #fafafa;
+  font-size: 16px;
+}
+
+h1 {
+	font-size: 1.6em;
+}
+
+h2 {
+	font-size: 0.813em; /* 13px */
+	margin: 40px auto;
+}
+
+h3 {
+	margin: 25px auto 15px;
+}
+
+p {
+	line-height: 1.5em; /* 24px */
+}
+
+strong {
+    color: #2572aa;
+}
+
+img {
+	width: 100%;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.wrapper {
+	width: 100%;
+	max-width: 1024px;
+	margin: 10px auto 0;
+}
+
+header {
+	padding: 0 5%;
+}
+
+.main-nav {
+	margin-bottom: 25px;
+
+}
+
+.main-nav ul {
+	padding: 0;
+}
+
+.main-nav li {
+	list-style: none;
+	padding: 10px 0;
+	background: #fff;
+	margin: 5px 0;
+}
+
+.main-nav a {
+	display: block;
+}
+
+#about {
+	color: #7f7f7f;
+	padding: 2% 5%;
+}
+
+#about img {
+	max-width: 367px;
+}
+
+#portfolio {
+	background: #fff;
+	padding: 0 5%;
+	overflow: hidden;
+}
+
+.project {
+	margin-bottom: 30px;
+}
+
+#contact {
+	padding: 0 5%;
+}
+
+footer {
+	width: 90%;
+	margin: 0 auto;
+	border-top: 1px solid #e7e7e7;
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.back-to-top {
+	display: block;
+}
+
+.bottom-nav {
+	display: none;
+}
+
+.bottom-nav li {
+	list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+
+	h1 {
+		margin-bottom: .335em;
+	}
+
+	h2 {
+		width: 100%;
+	}
+
+	header {
+		padding: 0 3%;
+	}
+
+	.main-nav {
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	.main-nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.main-nav li {
+		background: #fafafa;
+	}
+
+	#about {
+		display: flex;
+		text-align: left;
+		padding: 35px 3%;
+		justify-content: space-between;
+	}
+
+	.profileimg {
+		padding-left: 2%;
+		order: 2;
+		width: 40%;
+		flex-shrink: 0;
+	}
+
+	#portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+
+	.project {
+		width: 49%;
+	}
+
+	#contact {
+		width: 70%;
+		margin: 0 auto;
+		padding: 20px 5%;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+
+	.bottom-nav {
+		display: flex;
+		justify-content: space-between;
+		width: 40%;
+		font-size: 0.813em; /* 13px */
+	}
+}
+
+	@media screen and (min-width: 1024px) {
+
+		header {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.main-nav {
+			width: 30%;
+			margin: 0;
+		}
+
+		.main-nav ul {
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		h1 {
+			margin-right: auto;
+		}
+
+		.project {
+			width: 32%;
+		}
+
+		.bottom-nav {
+			width: 30%;
+		}
+	}
